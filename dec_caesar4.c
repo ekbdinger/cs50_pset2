@@ -30,13 +30,21 @@
         {
             char c = input[i];
             printf("%c:  ", c);   // type back the text via an array
-            printf("%d\n", (int) c);
+            printf("%d ", (int) c);
+            
+            // so I think this can be replaced essentially by the atoi() function
+            
+            // add 5 to the value
+            
+            
+            printf("+ 5 = %d", ((int) c) + 5);
+            printf(":  %c\n", (c + 5));
+            
         }
         printf("\n\n\n");
     }  
     
-    // ok good up until this point like before.  Now time to change the value of it.
-    
+    // ok good up until this point like before.  Now time to make 5 a variable, such as k.  But this is enough for tonight
     
     
     
@@ -52,7 +60,7 @@
         }    
         */
             
-       /*     
+         /*
     
                 for (int j = 0, n = strlen(argv[i]); j < n; j++)  // how long is foo bar and run the loop that many times
                 {
