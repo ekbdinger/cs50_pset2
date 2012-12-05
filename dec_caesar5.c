@@ -27,14 +27,14 @@
         // print string, one character at a time
         for (int i = 0, len = strlen(input); i < len; i++)  // I should store this as a variable here
         {
-            char text = input[i];
-            printf("%c:  ", text);   // type back the text via an array
-            printf("%d ", (int) text);
+            char p = input[i];
+            printf("%c:  ", p);   // type back the text via an array
+            printf("%d ", (int) p);
     
             // take the caesar key that is inputted, store it in a variable and convert to int
-            int k = atoi(argv[1]);   // converts 
-            printf("+ k = %d", ((int) text) + k);   // might want to turn this into a variable  (c + k)
-            printf(":  %c\n", (text + k));
+            int k = atoi(argv[1]);   // converts to an int
+            printf("+ k = %d", ((int) p) + k);   // might want to turn this into a variable  (c + k)
+            printf(":  %c\n", (p + k));
    
         }
         printf("\n\n\n");
