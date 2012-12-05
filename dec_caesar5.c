@@ -31,6 +31,7 @@
             printf("%c:  ", c);   // type back the text via an array
             printf("%d ", (int) c);
     
+            // take the caesar key that is inputted, store it in a variable and convert to int
             int k = atoi(argv[1]);   // converts 
             printf("+ k = %d", ((int) c) + k);   // might want to turn this into a variable  (c + k)
             printf(":  %c\n", (c + k));
