@@ -31,12 +31,8 @@
             char c = input[i];
             printf("%c:  ", c);   // type back the text via an array
             printf("%d ", (int) c);
-            
-            // so I think this can be replaced essentially by the atoi() function
-            
+    
             // add 5 to the value
-            
-            
             printf("+ 5 = %d", ((int) c) + 5);
             printf(":  %c\n", (c + 5));
             
@@ -45,6 +41,11 @@
     }  
     
     // ok good up until this point like before.  Now time to make 5 a variable, such as k.  But this is enough for tonight
+    
+     // scratch that atoi() is used to take the argument passed in by the user and turn it into an int
+            // string k = argv[1];
+            // this is where I stopped
+            
     
     
     
