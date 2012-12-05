@@ -3,6 +3,7 @@
 #include <stdio.h>
  #include <cs50.h>
  #include <string.h>
+ #include <stdlib.h>  // required for the atoi()
  
  
  int main(int argc, string argv[])
@@ -31,7 +32,7 @@
             printf("%d ", (int) c);
     
             int k = atoi(argv[1]);   // converts 
-            printf("+ k = %d", ((int) c) + k);
+            printf("+ k = %d", ((int) c) + k);   // might want to turn this into a variable  (c + k)
             printf(":  %c\n", (c + k));
    
         }
