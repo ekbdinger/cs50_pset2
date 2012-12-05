@@ -12,8 +12,6 @@
  #include <cs50.h>
  #include <string.h>
  
- // this is a good tutorial here:  http://www.cplusplus.com/doc/tutorial/ntcs/
- 
  int main(int argc, string argv[])
  {  
     for (int i = 1; i < argc; i++)  // setting this to i = 1 won't print out the command you just typed
@@ -32,7 +30,6 @@
                 
                 }
                 printf("\n");
-      
         }
   return 0;
   }
