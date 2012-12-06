@@ -8,6 +8,9 @@
  
  int main(int argc, string argv[])
 { 
+
+    // lowercase alphabet
+    string lower[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
  
  // Get user input, look at string1.c for an example from lecture 2w
     printf("Please enter a phrase:  ");
@@ -32,7 +35,10 @@
             
             // new try using the lower[] to figure out what number in the alphabet the character is
             int c = (fred + k) % 26;
-            printf("the value of c is:  %d", c);
+            printf("the value of c is:  %d\n\n", c);
+            
+            // print out the letter in the array
+            printf("The value of %c is now %s\n", p, lower[c]);
             
             
             
