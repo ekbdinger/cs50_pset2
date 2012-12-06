@@ -14,7 +14,7 @@
  /*
  for (int i = 1; i < argc; i++)  // setting this to i = 1 won't print out the command you just typed, use for k value
         {
-        }
+        }       
      */
  
  // Get user input, look at string1.c for an example from lecture 2w
@@ -33,8 +33,21 @@
     
             // take the caesar key that is inputted, store it in a variable and convert to int
             int k = atoi(argv[1]);   // converts to an int
-            printf("+ k = %d", ((int) p) + k);   // might want to turn this into a variable  (c + k)
-            printf(":  %c\n", (p + k));
+            int j = (k % 26);  // adding this
+            
+            printf("+ k = %d", ((int) p) + j);   // might want to turn this into a variable  (c + k)
+            printf(":  %c\n", (p + j));
+            
+         /*   // Enciphering equation
+            printf("Enciphering equation\n\n");
+            
+            int c;
+            c = ((int) p + k) % 26;
+            printf("The value is:  %d", c);
+            
+         // this is the part I need to focus on
+         
+         */
    
         }
         printf("\n\n\n");
