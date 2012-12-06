@@ -31,7 +31,7 @@
             int k = atoi(argv[1]);   // converts to an int
             
             // new try using the lower[] to figure out what number in the alphabet the character is
-            int c = (p + k) % 26;
+            int c = (fred + k) % 26;
             printf("the value of c is:  %d", c);
             
             
