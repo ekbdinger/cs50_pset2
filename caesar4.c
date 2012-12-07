@@ -4,6 +4,8 @@
  * 
  *
  * Demonstrates argv as a two-dimensional array.
+ * 
+ * to run this go ./caesar4.c
  ***************************************************************************/
  
  #include <stdio.h>
