@@ -1,4 +1,4 @@
-// this time I'm going to get the argument from the command line
+        // this time I'm going to get the argument from the command line
 
 #include <stdio.h>
  #include <cs50.h>
