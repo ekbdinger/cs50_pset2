@@ -4,7 +4,7 @@
  #include <cs50.h>
  #include <string.h>
  #include <stdlib.h>  // required for the atoi()
-  #include <ctype.h>  // for islower()
+  #include <ctype.h>  // for islower() and isdigit()
  
  
  int main(int argc, string argv[])
@@ -13,6 +13,7 @@
     int c;
 
     // take the caesar key that is inputted, store it in a variable and convert to int
+    
     int k = atoi(argv[1]);   // converts to an int
     
       // new try using the lower[] to figure out what number in the alphabet the character is
@@ -32,18 +33,14 @@
     // ensure the user entered something, I'll probably want to use a do-while loop in the final program
     if (input != NULL)
     {
-        
-        
+
         // print string, one character at a time
         for (int i = 0, len = strlen(input); i < len; i++)  // I should store this as a variable here
         {
             char p = input[i];
             printf("%c:  ", p);   // type back the text via an array
             
-            
-            //  this tells us what place in the alphabet the letter is, int (p) - 97, array is indexed at one
-            /* NEW CODE */
-            
+
             // check for lower case or upper case, if it is not a letter, don't do anything
             if (islower(p))
             {
@@ -60,15 +57,6 @@
             c = (fred + k) % 26;
             printf("The value of %c is now %s\n", p, upper[c]);
             }
-   
-            
-            /* END OF NEW CODE */
-    
-            // print out the letter in the array
-           // printf("The value of %c is now %s\n", p, lower[c]);
-         // printf("The value of %c is now %s\n", p, upper[c]);
-           
- 
         }
         printf("\n");
 
