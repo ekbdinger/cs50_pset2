@@ -23,12 +23,12 @@
     
     else
     {
-        int fred;   // do I still need both of these?
+        // variable declarations to use outside brackets
+        int fred;
         int c;
 
         // take the caesar key that is inputted, store it in a variable and convert to int
-        
-        int k = atoi(argv[1]);   // converts to an int
+        int k = atoi(argv[1]);   
         
         // lowercase alphabet
        string lower[] = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
@@ -46,26 +46,28 @@
             for (int i = 0, len = strlen(input); i < len; i++)  // I should store this as a variable here
             {
                 char p = input[i];
-               // printf("%c:  ", p);   // type back the text via an array
-                
-
+             
                 // check for lower case or upper case, if it is not a letter, don't do anything
                 if (islower(p))
                 {
                 fred = (int) p - 97;
                 c = (fred + k) % 26;
-               // printf("%c is the %d number in the alphabet\n", p, fred);
-               // printf("The value of %c is now %s\n", p, lower[c]);
+               
                   printf("%s", lower[c]);
                 }
                
                 if (isupper(p))
                 {
-              //  printf("\n\n%c is upper case\n", p);
                 fred = (int) p - 65;
                 c = (fred + k) % 26;
                 printf("%s",upper[c]);
                 }
+                
+                // if the character is a space
+                if (isspace (p) )
+                    printf(" ");
+                if (ispunct (p) )
+                    printf("%c", p);
             }
             printf("\n");
         }
