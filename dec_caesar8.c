@@ -35,7 +35,6 @@
         string upper[] = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
      
      // Get user input, look at string1.c for an example from lecture 2w
-        printf("Please enter a phrase:  ");
         string input = GetString();
         
         // ensure the user entered something, I'll probably want to use a do-while loop in the final program
